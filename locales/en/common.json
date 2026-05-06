@@ -1,0 +1,160 @@
+{
+  "app_name": "KRYPTOX",
+  "tagline": "Send money like sending a message",
+
+  "nav": {
+    "home": "Home",
+    "chat": "Chat",
+    "wallet": "Wallet",
+    "earn": "Earn",
+    "discover": "Discover"
+  },
+
+  "auth": {
+    "login": "Log In",
+    "register": "Sign Up",
+    "logout": "Log Out",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot Password?",
+    "have_account": "Already have an account?",
+    "no_account": "Don't have an account?",
+    "verify_email": "Verify Email",
+    "verification_code": "Verification Code",
+    "resend_code": "Resend Code"
+  },
+
+  "wallet": {
+    "balance": "Balance",
+    "total_balance": "Total Balance",
+    "send": "Send",
+    "receive": "Receive",
+    "swap": "Swap",
+    "scan": "Scan",
+    "assets": "Assets",
+    "transactions": "Transactions",
+    "address": "Address",
+    "network": "Network",
+    "amount": "Amount",
+    "coin": "Coin",
+    "note": "Note",
+    "fee": "Fee",
+    "send_to": "Send to",
+    "recipient": "Recipient @username",
+    "copy_address": "Copy Address",
+    "share": "Share",
+    "copied": "Copied!",
+    "confirm_send": "Confirm Send",
+    "transaction_sent": "Transaction Sent",
+    "viral_link": "Create Link",
+    "viral_link_desc": "Send crypto to anyone, even without KRYPTOX"
+  },
+
+  "chat": {
+    "messages": "Messages",
+    "type_message": "Message or $ amount",
+    "send_payment": "Send Payment",
+    "request_payment": "Request Payment",
+    "payment_sent": "Payment Sent",
+    "payment_received": "Payment Received",
+    "payment_request": "Payment Request",
+    "accept": "Accept",
+    "decline": "Decline",
+    "expires_in": "Expires in",
+    "no_conversations": "No conversations yet",
+    "start_chat": "Start a chat"
+  },
+
+  "earn": {
+    "title": "Earn",
+    "staking": "Staking",
+    "apy": "APY",
+    "stake": "Stake",
+    "unstake": "Unstake",
+    "staked": "Staked",
+    "rewards": "Rewards",
+    "claim_rewards": "Claim Rewards",
+    "lock_period": "Lock Period",
+    "days": "days",
+    "estimated_annual": "Estimated Annual"
+  },
+
+  "discover": {
+    "title": "Discover",
+    "search": "Search @username or business",
+    "people": "People",
+    "businesses": "Businesses",
+    "featured": "Featured",
+    "suggested": "Suggested",
+    "no_results": "No results found"
+  },
+
+  "invoice": {
+    "title": "Invoice",
+    "amount_due": "Amount Due",
+    "pay_now": "Pay Now",
+    "paid": "Paid",
+    "expired": "Expired",
+    "pending": "Pending",
+    "description": "Description",
+    "issued_by": "Issued by",
+    "expires_in": "Expires in"
+  },
+
+  "auction": {
+    "title": "Username Auctions",
+    "active": "Active",
+    "ended": "Ended",
+    "current_bid": "Current bid",
+    "place_bid": "Place Bid",
+    "min_bid": "Minimum bid",
+    "your_bid": "Your bid",
+    "won_by": "Won by",
+    "ends_in": "Ends in",
+    "how_it_works": "How it works",
+    "bid_success": "Bid placed!"
+  },
+
+  "claim": {
+    "title": "Claim Your Crypto",
+    "sent_you": "sent you",
+    "claim_now": "Claim Now",
+    "claimed": "Claimed!",
+    "link_expired": "Link Expired",
+    "already_claimed": "Already Claimed"
+  },
+
+  "errors": {
+    "generic": "Something went wrong",
+    "network": "Network error",
+    "invalid_amount": "Invalid amount",
+    "insufficient_funds": "Insufficient funds",
+    "user_not_found": "User not found",
+    "invalid_address": "Invalid address"
+  },
+
+  "common": {
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "or": "or",
+    "and": "and",
+    "of": "of",
+    "by": "by",
+    "powered_by": "Powered by",
+    "get_app": "Get the App",
+    "share": "Share",
+    "copy": "Copy",
+    "search": "Search",
+    "all": "All"
+  }
+}

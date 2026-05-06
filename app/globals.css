@@ -1,0 +1,125 @@
+@import '../styles/design-system.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Compatibility bridge: old Tailwind var names → design-system tokens ──────
+   Keeps pages that still use className="bg-surface2 text-textDim" etc working  */
+:root {
+  /* Old var names map to new design-system values */
+  --bg:       #080B14;
+  --surface:  #131825;
+  --surface2: #1A2235;
+  --primary:  #7B5EA7;
+  --gold:     #FF9F43;
+  --green:    #00D68F;
+  --red:      #FF4D6A;
+  --textDim:  #8A94A6;
+
+  /* Scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+* { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
+
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-base);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+
+/* ── Shimmer skeleton animation ── */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--bg-card) 0%,
+    var(--bg-card-hover) 50%,
+    var(--bg-card) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-move 1.5s ease-in-out infinite;
+}
+@keyframes shimmer-move {
+  0%   { background-position:  200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Gold gradient text ── */
+.gold-text {
+  background: linear-gradient(135deg, #F0B429, #FF9F43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Gradient text (blue→purple) ── */
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Demo mode badge ── */
+.demo-badge {
+  position: fixed;
+  top: max(8px, env(safe-area-inset-top));
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 214, 143, 0.12);
+  border: 1px solid rgba(0, 214, 143, 0.25);
+  color: var(--accent-green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* ── Sheet modal ── */
+.sheet-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+}
+.sheet {
+  width: 100%;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding: 24px 16px;
+  padding-bottom: max(32px, calc(16px + env(safe-area-inset-bottom)));
+}
+.sheet-handle {
+  width: 36px; height: 4px;
+  background: var(--border);
+  border-radius: var(--radius-full);
+  margin: 0 auto 20px;
+}
+
+/* ── Tailwind utility overrides for old pages ── */
+@layer utilities {
+  .bg-surface  { background-color: var(--bg-card) !important; }
+  .bg-surface2 { background-color: var(--bg-card-hover) !important; }
+  .border-border { border-color: rgba(255,255,255,0.06) !important; }
+  .text-textDim  { color: var(--text-secondary) !important; }
+  .text-green    { color: var(--accent-green) !important; }
+  .text-red      { color: var(--accent-red) !important; }
+  .text-gold     { color: var(--accent-orange) !important; }
+  .text-primary  { color: var(--accent-purple) !important; }
+  .bg-bg         { background-color: var(--bg-primary) !important; }
+}
